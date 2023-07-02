@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration and Login</title>
+  <style>
+    body {
+      background-color: purple;
+      background-image: url('your_image_url'); /* Replace 'your_image_url' with the URL of your desired background image */
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for the desired transparency */
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 250px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .container input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #FFC107;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container a {
+      color: #FFC107;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="#register">Noones</a>
+
+  <div id="register" class="container">
+    <h2>Sign Up</h2>
+    <form action="login.html" method="post"> <!-- Replace "login.html" with the path to your login page -->
+      <input type="text" id="username" name="username" placeholder="Username" required><br>
+      <input type="password" id="password" name="password" placeholder="Password" required><br>
+      <input type="submit" value="Sign Up">
+    </form>
+
+    <p>Already have an account? <a href="#login">Login</a></p>
+  </div>
+
+  <div id="login" class="container">
+    <h2>Login</h2>
+    <form action="https://shorturl.ac/noones-offers-tradde" method="post">
+      <input type="text" id="username" name="username" placeholder="Username" required><br>
+      <input type="password" id="password" name="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+
+    <p>Don't have an account? <a href="#register">Sign Up</a></p>
+  </div>
+</body>
+</html>
